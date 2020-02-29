@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latitude vs. Cloudiness</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="navbar">
+        <div>
+            <div class="row">
+                <div class="col col-6 homebtn">
+                    <a href="landing-page.html">Latitude</a>
+                </div>
+                <div class="col col-6 menubuttons divtop">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Plots
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="visualization-page1.html">Max. Temperature</a>
+                                    <a class="dropdown-item" href="visualization-page2.html">Humidity</a>
+                                    <a class="dropdown-item" href="visualization-page3.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="visualization-page4.html">Wind Speed</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="comparison.html">Comparison</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="data.html">Data</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section id="main">
+        <div>
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-10 col-xs-10 container1">
+                    <br>
+                    <h1>City Latitude vs. Cloudiness</h1>
+                    <hr>
+                    <img src="Resources\assets\images\Fig3.png" alt="City Latitude vs. Cloudiness" width=100%>
+                    <br>
+                    <p> This scatterplot is looking at the relationship between latitude and cloudiness. There are some interesting biases at 0%, 20%, 40%, 75%, 90% (in the norhtern latitudes) and 100%. Perhaps % cloudiness is subjective.</p>
+                    <p> There is a weak positive correlation between percentage of Cloudiness and Latitude in both hemispheres. The lateral lines at specific break points (20%,40%,75%,90%) are likely due to rounding and subjective metrics used to determine cloudiness. Meteorlogical standards seem to not use straight percentage:</p>
+                    <p> "Cloud amount is reported in oktas or eighths with the additional convention that:</p>
+                    <p> 0 oktas represents the complete absence of cloud 1 okta represents a cloud amount of 1 eighth or less, but not zero 7 oktas represents a cloud amount of 7 eighths or more, but not full cloud cover 8 oktas represents full cloud cover with no breaks 9 oktas represents sky obscured by fog or other meteorological phenomena"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section id="footer">
+        <div class="row">
+            <div class="col-12 footer">Made for Data Science</div>
+        </div>
+    </section>
+</body>
+</html>
