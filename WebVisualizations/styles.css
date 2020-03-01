@@ -60,7 +60,7 @@ img {
     margin-right: auto;
 }
 
-#imgsel{
+#img:hover{
     border: lightseagreen 2px solid;
 }
 
